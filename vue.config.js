@@ -3,5 +3,6 @@ module.exports = {
      headers: {
         'X-Frame-Options': 'SAMEORIGIN'
     }
-  }
+  },
+  outputDir: 'docs'
 }
