@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,500");
+
+html, body, header, .synx-dark-background {
+    background-color: #171B1C;
+}
+
+body {
+  margin-top: -152px;
+}
+
+a.navbar-item > div > div > div > img {
+  width: auto !important;
+}
+
+.navbar {
+    background-color: #171B1C !important;
+}
+
+a.navbar-item, span.navbar-item-name {
+    font-weight: bolder;
+    color: #aaacaf;
+    -webkit-text-fill-color: #aaacaf;
+}
+
+a.navbar-item:hover, span.navbar-item-name:hover {
+    font-weight: bolder;
+    color: white;
+    -webkit-text-fill-color: white;
+}
+
+a.button, a.button:hover {
+   -webkit-text-fill-color: white;
+   font-weight: bold;
+}
+
+.profile-image {
+  padding-top: 10px;
+}
+
+.synx-danger {
+  color: #EF5FA7;
+  background: linear-gradient(16deg, #EF5FA7, #FF8DC6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 2px 30px #EF5FA766;
+}
+
+.synx-success {
+  color: #16E7CF;
+  background: linear-gradient(16deg, #16E7CF, #73FDEA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 2px 30px #16E7CF66;
+}
+
+.synx-info {
+  color: #00A2FF;
+  background: linear-gradient(16deg, #00A2FF, #56C1FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 2px 30px #00A2FF66;
+}
+
+.synx-panel {
+  background-color: #1E2324;
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.25);
+  margin-top: 4em !important;
+  margin-bottom: 3em !important;
+  padding: 3em 1em !important;
+}
+
+.at-scale {
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    max-width: 100%;
+    height: 0px;
+    background-image: url('/static/img/at-scale.svg');
+    padding: 0px 0px 28.2927%;
+    margin-top: -5rem;
+}
+
+.button.is-synx-primary {
+    background: rgb(107,85,178);
+    background: linear-gradient(16deg, rgba(107,85,178,1) 0%, rgba(86,193,255,1) 150%);
+    border-color: transparent;
+    border-style: none;
+    color: white;
+}
+
+.button.is-synx-primary:hover, .button.is-synx-primary.is-hover {
+    box-shadow: 0px 2px 14px -2px rgba(103,108,109,0.5);
+    color: white;
+}
+
+.button.is-synx-link {
+    background: #171B1C;
+    border-color: transparent;
+    border-style: none;
+    color: #80B5F9;
+}
+
+.button.is-synx-link:hover, .button.is-synx-link.is-hover {
+    color: #a0d5F9;
+}
+
+::-webkit-scrollbar {
+  width:9px;
+  max-height:9px;
+  background-color:#0F0F0F;
+  border-radius:3px;
+  border:none
+}
+
+::-webkit-scrollbar-track {
+  background:#111316;
+  border:none;
+  width:11px;
+  max-height:9px
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius:16px;
+  border:none;
+  background:#1B1D1F;
+  background-clip:content-box;
+  width:11px
+}
+
+.main-wrapper {
+  display: flex;
+  min-height: calc(100vh - 22px);
+  flex-direction: column;
+}
+
+.is-reduced {
+  max-width: 960px !important;
+}
+.section {
+  flex: 1;
+  padding: 0 !important;
+}
+
+.section-hero {
+  padding-top: 4rem;
+}
+
+.synx-gray-background {
+  background-color: #1E2324;
+}
+
+.fig-padding {
+  padding: 2.2em 1em 1.2em;
+  margin-bottom: 1.8em;
+}
+
+.fig-marging {
+  margin-bottom: 1.8em;
+}
+
+p.desc {
+  line-height: 2.4em;
+
+}
+
+.dark-border-wrap {
+  position: relative;
+  background: linear-gradient(to right, #A36AF6, #78C1FA, #AAFAF4, #F2F5CA, #F2A7B0);
+  padding-top: 2px;
+  margin-top: 1.4rem;
+}
+
+.footer-border-wrap {
+  position: relative;
+  background: linear-gradient(to right, #A36AF6, #78C1FA, #AAFAF4, #F2F5CA, #F2A7B0);
+  padding-bottom: 3px;
+  margin-top: auto;
+}
+
+.math-fig {
+  margin: 1em 2em;
+}
+
+a {
+  color: #8CD1C7;
+  background: linear-gradient(to right, #78C1FA, #AAFAF4, #F2F5CA, #F2A7B0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a:hover {
+  color: #7BB8AF;
+  background: linear-gradient(to right, #A36AF6, #AAFAF4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+@import '~bulma';
+
+@font-face {
+  font-family: "Neufile Grotesk";
+  font-weight: 400;
+  src: url("../fonts/NeufileGrotesk-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Neufile Grotesk";
+  font-weight: 700;
+  src: url("../fonts/NeufileGrotesk-Bold.ttf")
+    format("truetype");
+}
+
+#app {
+  font-family: "Neufile Grotesk", Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#renderer {
+  min-height: 360px;
+}
+
+@include tablet {
+  #app {
+    margin-top: 22px;
+  }
+}
+
+html, body, .synx-dark-background {
+  background-color: #171B1C;
+}
+
+a {
+  color: #8CD1C7;
+  background: linear-gradient(#78C1FA, #AAFAF4, #F2F5CA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a:hover {
+  color: #7BB8AF;
+  background: linear-gradient(#A36AF6, #AAFAF4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.legend-s-border-wrap {
+  position: relative;
+  background: linear-gradient(to right, #00A89D, #88FA4E, #88FA4E, #88FA4E, #88FA4E, #88FA4E, #88FA4E, #88FA4E, #88FA4E);
+  padding-left: 32px;
+  max-height: 32px;
+}
+
+.legend-i-border-wrap {
+  position: relative;
+  background: linear-gradient(to right, #00A89D, #56C1FF, #6047B5, #6047B5, #88FA4E, #88FA4E);
+  padding-left: 32px;
+  max-height: 32px;
+
+}
+
+.legend-r-border-wrap {
+  position: relative;
+  background: linear-gradient(to right, #6047B5, #56A1DF, #56C1FF, #56C1FF, #56C1FF, #56C1FF);
+  padding-left: 32px;
+  max-height: 32px;
+}
+
+.legend {
+  max-height: 32px;
+  padding-left: .6em;
+  color: #fff;
+  font-size: .9em;
+  background-color: #171B1C;
+}
+
+.legends {
+  margin: -2em 0;
+}
+
+.v-space-1 {
+  margin-top: 1.4em;
+}
+
+.v-space-3 {
+  margin-top: 3em;
+}
+
+.v-space-9 {
+  margin-top: 9em;
+}
+
+.footer {
+  padding: 3rem 1.5rem 3rem;
+  background-color: #000;
+}
+
+.footer-slim {
+    padding: 2rem 1.5rem 1.6rem;
+    background-color: #000;
+}
+
+.footer-logo {
+  margin-top: 1.5rem;
+  height: 1.5rem;
+}
+
+.footer-slim-logo {
+  margin-top: 0;
+  height: 1.2rem;
+}
+
+$primary: #78C1FA;
+$primary-accent: #AAFAF4;
+$secondary: #F2F5CA;
+$secondary-accent: #F2A7B0;
+
+$title-grey: #888;
+$placeholder: #888;
+/* ==========================================================================
+1. Shadow variables
+========================================================================== */
+
+//Base shadow
+$base-shadow: rgba(0, 0, 0, 0.12);
+
+//Primary box shadow
+$primary-shadow-from: rgba(127, 0, 255, 0.42);
+$primary-shadow-to: rgba(63, 0, 252, 0.2);
+$primary-box-shadow:  0 14px 26px -12px $primary-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $primary-shadow-to !important;
+
+//Secondary box shadow
+$secondary-shadow-from: rgba(0, 255, 153, 0.42);
+$secondary-shadow-to: rgba(51, 204, 255, 0.2);
+$secondary-box-shadow:  0 14px 26px -12px $secondary-shadow-from, 0 4px 23px 0px $base-shadow, 0 8px 10px -5px $secondary-shadow-to !important;
+
+
+.primary-gradient {
+    background: $primary;
+    background: -webkit-linear-gradient(to right, #78C1FA, #AAFAF4, #F2F5CA, #F2A7B0) !important;
+    background: linear-gradient(to right, #78C1FA, #AAFAF4, #F2F5CA, #F2A7B0) !important;
+}
+
+.secondary-gradient {
+    background: $secondary;
+    background: -webkit-linear-gradient(to right, #78C1FA, #AAFAF4, #F2F5CA, #F2A7B0) !important;
+    background: linear-gradient(to right, #78C1FA, #AAFAF4, #F2F5CA, #F2A7B0) !important;
+}
+
+/* ==========================================================================
+2. Gradient mixins
+========================================================================== */
+
+@mixin theme-hero-gradient(){
+    background-image: -webkit-linear-gradient(to bottom, #5202d8 0%, #3c019e 100%);
+    background-image: linear-gradient(to bottom, #5202d8 0%, #3c019e 100%);
+}
+
+@mixin primary-gradient-top(){
+    background: $primary;
+    background: -webkit-linear-gradient(to top, $primary, $primary-accent) !important;
+    background: linear-gradient(to top, $primary, $primary-accent) !important;
+}
+
+@mixin primary-gradient-left(){
+    background: $primary;
+    background: -webkit-linear-gradient(to left, #A36AF6, #78C1FA, #AAFAF4, #F2F5CA, #F2A7B0) !important;
+    background: linear-gradient(to left, #A36AF6, #78C1FA, #AAFAF4, #F2F5CA, #F2A7B0) !important;
+}
+
+@mixin primary-gradient-right(){
+    background: $primary;
+    background: -webkit-linear-gradient(to right, #A36AF6, #78C1FA, #AAFAF4, #F2F5CA, #F2A7B0) !important;
+    background: linear-gradient(to right, #A36AF6, #78C1FA, #AAFAF4, #F2F5CA, #F2A7B0) !important;
+}
+
+@mixin secondary-gradient-top(){
+    background: $secondary;
+    background: -webkit-linear-gradient(to top, $secondary, $secondary-accent) !important;
+    background: linear-gradient(to top, $secondary, $secondary-accent) !important;
+}
+
+@mixin secondary-gradient-right(){
+    background: $danger;
+    background: -webkit-linear-gradient(to right, $danger, $secondary-accent) !important;
+    background: linear-gradient(to right, $danger, $secondary-accent) !important;
+}
+
+@mixin secondary-gradient-left(){
+    background: $danger;
+    background: -webkit-linear-gradient(to left, $secondary, $secondary-accent) !important;
+    background: linear-gradient(to left, $danger, $secondary-accent) !important;
+}
+
+//Material control
+.control-material {
+    position:relative;
+    margin-bottom:3em;
+    input, textarea {
+        border-radius: 0 !important;
+        border-color: rgba(0,0,0,0.05);
+        resize: none;
+    }
+    //primary colors
+    &.is-primary {
+        input.material-input:focus ~ label, input:valid ~ label, textarea:focus ~ label {
+            color: $placeholder;
+        }
+        input, textarea {
+            color: $white;
+            border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+        }
+        .bar:before {
+            @include primary-gradient-right();
+        }
+        .bar:after {
+            @include primary-gradient-left();
+        }
+        &.has-icon input:focus ~ i {
+            color: $primary !important;
+        }
+    }
+    //secondary colors
+    &.is-secondary {
+        input.material-input:focus ~ label, input:valid ~ label, textarea:focus ~ label {
+            color: $danger;
+        }
+        input, textarea {
+            color: $danger;
+            border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+        }
+        .bar:before {
+            @include secondary-gradient-right();
+        }
+        .bar:after {
+            @include secondary-gradient-left();
+        }
+        &.has-icon input:focus ~ i {
+            color: $danger !important;
+        }
+    }
+    //Common material styles
+    input.material-input, textarea {
+        width: 100% !important;
+        font-size:18px;
+        padding:0.625em  0.625em 0.625em 0.3125em;
+        display:block;
+        width:18.75em;
+        border:none;
+        border-bottom:1px solid $title-grey;
+        background-color: #121515 /*transparent*/ !important;
+        &:focus {
+            outline:none;
+        }
+    }
+    //Floating label
+    label {
+        font-family:'Arial';
+        color: $placeholder;
+        font-size:15px;
+        font-weight:normal;
+        position:absolute;
+        pointer-events:none;
+        left:0.3125em;
+        top:0.625em;
+        transition:0.2s ease all;
+        -moz-transition:0.2s ease all;
+        -webkit-transition:0.2s ease all;
+    }
+    input.material-input:focus ~ label, input:valid ~ label, textarea:focus ~ label		{
+        top:-20px;
+        left: -2px;
+        font-size:12px;
+    }
+    //bottom bar
+    .bar 	{
+        position:relative;
+        display:block;
+    }
+
+    .bar:before, .bar:after 	{
+        content:'';
+        height:2px;
+        width:0;
+        bottom:0px;
+        position:absolute;
+
+        transition:0.2s ease all;
+        -moz-transition:0.2s ease all;
+        -webkit-transition:0.2s ease all;
+    }
+    .bar:before {
+        left:0%;
+    }
+    .bar:after {
+        right:50%;
+    }
+    input.material-input:focus ~ .bar:before, textarea:focus ~ .bar:before{
+        width:100%;
+    }
+}
+
+//Input and textareas text colors
+.control-material textarea {
+    color: $white;
+}
+
+
+/* ==========================================================================
+1. Contact form
+========================================================================== */
+
+//Wrapper
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //Icon
+    .contact-icon {
+        position: relative;
+        height: 54px;
+        width: 54px;
+        background: $secondary;
+        background: -webkit-linear-gradient(to right, $secondary, $secondary-accent) !important;
+        background: linear-gradient(to right, $secondary, $secondary-accent) !important;
+        border-radius: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        cursor: pointer;
+        //Inner image
+        img {
+            position: absolute;
+            display: block;
+            width: 24px;
+            height: 24px;
+            //left: 2px;
+            z-index: 3;
+            //Telegram icon position
+            &.is-telegram {
+                top: calc(50% - 12px);
+                left: calc(50% - 14px);
+            }
+        }
+        //Pseudo pulsating element
+        &:after {
+            content: '';
+            position: absolute;
+            top: calc(50% - 12px);
+            left: calc(50% - 12px);
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            background: $secondary;
+            background: -webkit-linear-gradient(to right, $secondary, $secondary-accent) !important;
+            background: linear-gradient(to right, $secondary, $secondary-accent) !important;
+            animation: pulse 1.6s infinite;
+            animation-duration: 2s;
+            transform-origin: center center ;
+            z-index: 0;
+        }
+
+    }
+}
+
+//Contact form spacing
+.contact-form {
+    margin-top: 40px;
+}
+
+textarea {
+  max-height: 20rem;
+  min-height: 11rem;
+  text-align: center;
+}
+
+@include tablet {
+  textarea {
+    max-height: 20rem;
+    min-height: 6rem;
+    text-align: center;
+  }
+}
+
+.online-status {
+    font-family: "Roboto Mono", "Liberation Mono", Consolas, sans-serif;
+    font-size: 0.75rem;
+    text-align: center;
+    background: #0f0f0f;
+    margin: 1rem 0px 3rem !important;
+    color: #ccc;
+}
