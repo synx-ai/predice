@@ -6,12 +6,12 @@
         <div class="navbar-brand">
           <a class="navbar-item" href="https://synx.ai/maia">
             <div class="is-hidden-touch">
-              <img src="/static/img/maia-logo-color.svg" srcset="/static/img/maia-logo-color.svg 2x" alt="Maia Score">
+              <img :src="`${publicPath}static/img/maia-logo-color.svg`" :srcset="`${publicPath}static/img/maia-logo-color.svg 2x`" alt="Maia Score">
             </div>
 
             <div class="media is-hidden-desktop">
               <div class="media-left">
-                <img src="/static/img/maia-logo-color.svg" srcset="/static/img/maia-logo-color.svg 2x" alt="Maia Score">
+                <img :src="`${publicPath}static/img/maia-logo-color.svg`" :srcset="`${publicPath}static/img/maia-logo-color.svg 2x`" alt="Maia Score">
               </div>
             </div>
           </a>
@@ -53,5 +53,10 @@
 <script>
 export default {
   name: 'HeaderIndex',
+  data () {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  }
 }
 </script>

@@ -8,7 +8,7 @@
           <div class="column">
             <div class="content">
               <p class="is-vcentered">
-                <a href="https://synx.ai/maia" target="_blank"><img src="/static/img/maia-logo-color.svg" class="footer-slim-logo"></a>
+                <a href="https://synx.ai/maia" target="_blank"><img :src="`${publicPath}static/img/maia-logo-color.svg`" :srcset="`${publicPath}static/img/maia-logo-color.svg 2x`" class="footer-slim-logo"></a>
               </p>
             </div>
           </div>
@@ -29,5 +29,10 @@
 <script>
 export default {
   name: 'FooterDashboard',
+  data () {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  }
 }
 </script>

@@ -29,7 +29,7 @@
           <div class="column">
             <div class="content hs-text-white has-text-centered">
               <p>
-                <a href="https://synx.ai/maia" target="_blank"><img src="/static/img/maia-logo-color.svg" srcset="/maia-logo-color.svg 2x" alt="Maia Score" class="footer-logo"></a>
+                <a href="https://synx.ai/maia" target="_blank"><img :src="`${publicPath}static/img/maia-logo-color.svg`" :srcset="`${publicPath}static/img/maia-logo-color.svg 2x`" alt="Maia Score" class="footer-logo"></a>
               </p>
               <p class="is-size-7">Maia Score SAPI de CV. All Rights Reserved &copy; 2020</p>
             </div>
@@ -43,5 +43,10 @@
 <script>
 export default {
   name: 'FootIndex',
+  data () {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  }
 }
 </script>
