@@ -28,7 +28,7 @@
           </div>
         </div>
 
-        <div class="at-scale"></div>
+        <div class="at-scale" :style="`background-image: url('${publicPath}static/img/at-scale.svg');`"></div>
 
       </div>
     </section>
@@ -64,5 +64,10 @@
 <script>
 export default {
   name: 'Index',
+  data () {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  }
 }
 </script>
