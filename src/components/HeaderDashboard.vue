@@ -25,15 +25,15 @@
         <div id="navigation" class="navbar-menu">
           <div class="navbar-end">
 
-            <a href="/dashboard/business-metrics" class="navbar-item">
+            <a :href="`${publicPath}dashboard/business-metrics`" class="navbar-item">
               <span class="navbar-item-name">Business Metrics</span>
             </a>
 
-            <a href="/dashboard/model-performance" class="navbar-item">
+            <a :href="`${publicPath}dashboard/model-performance`" class="navbar-item">
               <span class="navbar-item-name">Model Performance</span>
             </a>
 
-            <a href="/dashboard/status" class="navbar-item">
+            <a :href="`${publicPath}dashboard/status`" class="navbar-item">
               <span class="navbar-item-name">System Status</span>
             </a>
 
