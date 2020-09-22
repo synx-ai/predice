@@ -1,0 +1,59 @@
+swagger: "2.0"
+info:
+  description: "This is a sample server"
+  version: "1.0.0"
+  title: "Swagger "
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "petstore.swagger.io"
+basePath: "/v2"
+tags:
+- name: "Lender"
+  description: "Access to orders"
+
+schemes:
+- "https"
+- "http"
+paths:
+  /data:
+    get:
+      parameters:
+        - name: accOpenPast24Mths
+          in: query
+          required: true
+          description: Number of trades opened in past 24 months.
+          schema:
+            type : integer
+            format: int64
+            minimum: 1
+        - name: addrState
+          in: path
+          required: true
+          description: The state provided by the borrower in the loan application
+          schema:
+            type : integer
+            format: int64
+            minimum: 1
+        - name: all_util
+          in: path
+          required: true
+          description: Balance to credit limit on all trades
+          schema:
+            type : integer
+            format: int64
+            minimum: 1
+      
+      responses:
+        '400':
+          description: Either `rdate` or `start_date`+`end_date` are required.
+  responses:
+    200:
+        description: OK
+    
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
