@@ -15,7 +15,7 @@
               <div class="column">
                 <div class="field is-grouped">
                   <p class="control">
-                    <a href="/dashboard" class="button is-normal is-synx-primary">Request a Demo</a>
+                    <a :href="`${publicPath}dashboard`" class="button is-normal is-synx-primary">Request a Demo</a>
                   </p>
                   <p class="control">
                     <button class="button is-normal is-synx-link">
