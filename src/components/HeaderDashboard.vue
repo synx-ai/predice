@@ -25,11 +25,11 @@
         <div id="navigation" class="navbar-menu">
           <div class="navbar-end">
 
-            <a href="/dashboard/metrics" class="navbar-item">
+            <a href="/dashboard/business-metrics" class="navbar-item">
               <span class="navbar-item-name">Business Metrics</span>
             </a>
 
-            <a href="/dashboard/performance" class="navbar-item">
+            <a href="/dashboard/model-performance" class="navbar-item">
               <span class="navbar-item-name">Model Performance</span>
             </a>
 
