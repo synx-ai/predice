@@ -29,9 +29,9 @@
           <div class="column">
             <div class="content hs-text-white has-text-centered">
               <p>
-                <a href="https://synx.ai/maia" target="_blank"><img :src="`${publicPath}static/img/maia-logo-color.svg`" :srcset="`${publicPath}static/img/maia-logo-color.svg 2x`" alt="Maia Score" class="footer-logo"></a>
+                <a href="https://synx.ai/maia" target="_blank"><img :src="`${publicPath}static/img/synx-logo.svg`" :srcset="`${publicPath}static/img/synx-logo.svg 2x`" alt="Maia Score" class="footer-logo"></a>
               </p>
-              <p class="is-size-7">Maia Score SAPI de CV. All Rights Reserved &copy; 2020</p>
+              <p class="is-size-7">Synx. All Rights Reserved &copy; 2020</p>
             </div>
           </div>
         </div>

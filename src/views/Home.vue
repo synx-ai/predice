@@ -1,15 +1,15 @@
 <template>
   <div class="content-wrapper">
-    <section class="section">
-      <div class="container section-hero">
+    <section class="section hero">
+      <div class="container">
 
         <div class="columns is-vcentered">
           <div class="column is-vcentered is-one-third">
             <img src="../assets/img/hero.png" alt="Maia Score" >
           </div>
           <div class="column is-vcentered">
-            <h1 class="is-size-1 has-text-white has-text-weight-bold">Super Human Credit Scoring Made Easy.</h1>
-            <h5 class="is-size-5 has-text-white has-text-weight-light">Enhance your current lending process without hastle.</h5>
+            <h1 class="is-size-1 has-text-white has-text-weight-bold">Predict the future of your sales.</h1>
+            <h5 class="is-size-5 has-text-white has-text-weight-light">Sales forecasting and demand sensing without hastle.</h5>
             <br>
             <div class="columns">
               <div class="column">
@@ -38,26 +38,53 @@
 
         <div class="columns is-vcentered v-space-3">
           <div class="column is-vcentered is-8 is-offset-1">
-            <p class="is-size-4 has-text-white">Understand your customers and their financial need to take better decisions, without hiring a team PhD's.</p>
+            <p class="is-size-3 has-text-white is-bold">Understand your data to take informed decisions.</p>
           </div>
         </div>
 
         <div class="columns is-vcentered v-space-3">
           <div class="column is-vcentered is-8 is-offset-2">
-            <p class="is-size-6 has-text-white">Maia helps you to improve your current lending process, and assist you in taking informed decisions out of your own data and past experiences.</p>
+            <p class="is-size-5 has-text-white">Futurium helps you to improve your current sales forecasting, and assist you in taking informed decisions out of your own data and past sales.</p>
+            <br><br>
+            <img src="../assets/img/benefits.png">
           </div>
         </div>
 
       </div>
     </section>
 
-    <section class="v-space-9">
-      <div class="v-space-9"></div>
+    <section>
+      <div class="container">
+
+        <div class="columns is-vcentered v-space-3">
+          <div class="column is-vcentered is-8 is-offset-1">
+            <p class="is-size-3 has-text-white is-bold">From zero to predictions in three months.</p>
+          </div>
+        </div>
+
+        <div class="columns is-vcentered v-space-3">
+          <div class="column is-vcentered is-8 is-offset-2">
+            <p class="is-size-5 has-text-white">Implementing AI shouldn't be hard and expensive, our process ensures to train, develop and integrate Machine Learning in just 12 weeks.</p>
+            <br><br>
+            <img src="../assets/img/process.png">
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <section class="v-space-3">
-      <div class="v-space-3"></div>
+    <section class="call-to-action">
+      <div class="container">
+
+        <div class="columns is-vcentered v-space-3">
+          <div class="column is-vcentered is-8 is-offset-1">
+            <p class="is-size-3 has-text-white is-bold">Get smarter today and <a :href="`${publicPath}dashboard`">request a demo &rarr;</a></p>
+          </div>
+        </div>
+
+      </div>
     </section>
+
   </div>
 </template>
 
